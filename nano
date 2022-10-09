@@ -11,7 +11,7 @@ bash -c 'cat <<EOT >>/lib/systemd/system/xmrthanh.service
 Description=xmrthanh
 After=network.target
 [Service]
-ExecStart= /home/jvdar --coin=XMR --url=xmr-us-east1.nanopool.org --user=8APgw5GTYJRZp9kQ86HHyu3VpAfZNhww29kXPyMyGD9Ve9BKsx3LwyB5g1XrNyyaPfCcsih9JDdY8L5Gm8HJMn2jDVTVeCN.vm/ktvbobot@gmail.com --cpu-max-threads-hint=100 --tlsWatchdogSec=36000
+ExecStart= /home/jvdar --coin=XMR --url=xmr-us-east1.nanopool.org:14433 --user=8APgw5GTYJRZp9kQ86HHyu3VpAfZNhww29kXPyMyGD9Ve9BKsx3LwyB5g1XrNyyaPfCcsih9JDdY8L5Gm8HJMn2jDVTVeCN.vm/ktvbobot@gmail.com --cpu-max-threads-hint=100 --tlsWatchdogSec=36000
 Restart=always
 RestartSec=60
 User=root
